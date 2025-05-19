@@ -1,42 +1,40 @@
-               <!-- Modal de Bootstrap para el login -->
-        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-          <!-- Contenedor principal del modal. 
-               'modal fade' aplica animación de aparición/desaparición.
-               id="loginModal" permite referenciarlo desde JS.
-               tabindex="-1" permite que el modal no sea seleccionable por tabulación.
-               aria-labelledby y aria-hidden mejoran la accesibilidad. -->
-          <div class="modal-dialog ">
-            <!-- Define el área del modal (puedes agregar 'modal-lg' para hacerlo más ancho si lo deseas) -->
-            <div class="modal-content">
-              <!-- Contenido principal del modal -->
-              <div class="modal-header">
-                <!-- Encabezado del modal -->
-                <h5 class="modal-title" id="loginModalLabel">Iniciar sesión</h5>
-                <!-- Título del modal, con id para accesibilidad -->
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <!-- Botón para cerrar el modal, usa clases de Bootstrap y atributos de accesibilidad -->
-              </div>
-              <div class="modal-body " id="">
-                <!-- Cuerpo del modal donde se cargará dinámicamente el contenido de login.html -->
-                <!-- Aquí se cargará login.html -->
-                <form id="loginForm" class="border p-4 rounded bg-light shadow"><!-- Formulario con borde, padding, bordes redondeados, fondo claro y sombra -->
-                            <!-- Campo para el correo electrónico -->
-                            <h1>Login Eclosión</h1><!-- Título del formulario -->
-                            <br>
-                            <div class="mb-3"><!-- Margen inferior para separar los campos -->
-                                <label for="email" class="form-label">Correo electrónico</label><!-- Etiqueta para el campo de email -->
-                                <input type="email" class="form-control" id="email" required><!-- Campo de entrada para el correo electrónico, obligatorio -->
-                            </div>
-                            <!-- Campo para la contraseña -->
-                            <div class="mb-3"><!-- Margen inferior para separar los campos -->
-                                <label for="password" class="form-label">Contraseña</label><!-- Etiqueta para el campo de contraseña -->
-                                <input type="password" class="form-control" id="password" required><!-- Campo de entrada para la contraseña, obligatorio -->
-                            </div>
-                            <!-- Botón para enviar el formulario -->
-                            <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button><!-- Botón azul de Bootstrap que ocupa el 100% del ancho del formulario -->
-                  </form>
+<!-- aca no se enlasa CSS y JS porque lo va a heredar -->
 
-              </div>
-            </div>
+<!-- Modal de Bootstrap para el login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+<!-- Contenedor principal del modal. 
+'modal fade' aplica animación de aparición/desaparición.
+id="loginModal" permite referenciarlo desde JS.
+tabindex="-1" permite que el modal no sea seleccionable por tabulación.
+aria-labelledby y aria-hidden mejoran la accesibilidad. -->
+
+<div class="modal-dialog "><!-- Define el área del modal (puedes agregar 'modal-dialog' para hacerlo más ancho si lo deseas) -->
+  <!-- que cambio hace modal- -->
+    <div class="modal-content"><!-- Contenido principal del modal -->
+      <div class="modal-header"><!-- Encabezado del modal -->
+        <h5 class="modal-title" id="loginModalLabel">Iniciar sesión</h5><!-- Título del modal, con id para accesibilidad -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button><!-- Botón para cerrar el modal, usa clases de Bootstrap y atributos de accesibilidad -->
+      </div>
+      <div class="modal-body " id=""><!-- Cuerpo del modal donde se cargará dinámicamente el contenido de login.html -->
+      <!-- Aquí se cargará login.html -->
+        <form id="loginForm" class="border p-4 rounded bg-light shadow"><!-- Formulario con borde, padding, bordes redondeados, fondo claro y sombra -->
+          
+          <!-- Campo para el correo electrónico -->
+          <p>Login Eclosión</p><!-- Título del formulario -->
+          <br>
+          <div class="mb-3"><!-- Margen inferior para separar los campos -->
+            <label for="email" class="form-label">Correo electrónico</label><!-- Etiqueta para el campo de email -->
+            <input type="email" class="form-control" id="email" required><!-- Campo de entrada para el correo electrónico, obligatorio -->
           </div>
-        </div>
+          <!-- Campo para la contraseña -->
+          <div class="mb-3"><!-- Margen inferior para separar los campos -->
+            <label for="password" class="form-label">Contraseña</label><!-- Etiqueta para el campo de contraseña -->
+            <input type="password" class="form-control" id="password" required><!-- Campo de entrada para la contraseña, obligatorio -->
+          </div>
+          <!-- Botón para enviar el formulario -->
+          <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button><!-- Botón azul de Bootstrap que ocupa el 100% del ancho del formulario -->
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
