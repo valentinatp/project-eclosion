@@ -1,13 +1,49 @@
+@import url(home-style.css);
+
 .colores-paleta-01 { background-color: #093246; }
 .colores-paleta-02 { background-color: #284D5D; }
 .colores-paleta-03 { background-color: #198683; }
 .colores-paleta-04 { background-color: #68BDB8; }
-.colores-paleta-05 { background-color: #68BDB8; }
-
-body { color: #284D5D; }
-h1 { color: #093246; }
-p { color: #284D5D; }
+.colores-paleta-05 { background-color: #F3EDE1; }
+/* ESTILOS GENERALES - NO MODIFICAR */
+body { color: #284D5D; font-family: "Montserrat", sans-serif;}
+h1, h2, h3, h4, h5, h6 {color: #093246; } 
+h1 { font-size: 32px; }
+h2 { font-size: 28px; }
+h3 { font-size: 24px; }
+p { color: #284D5D;  font-size: 16px; }
 img { width: 100px; height: 100px; }
+footer { background-color: #093246; padding: 1rem 0; color: #F3EDE1; font-size: 0.8rem; }
+
+/* NAVBAR */
+.bg-body-tertiary { background-color: #093246 !important; color: #F3EDE1; }
+.navbar-menu-icon svg  { background-color: #F3EDE1; width: 30px; height: 30px; }
+.navbar-user-icon svg { background-color: #F3EDE1; border-radius: 50%; width: 30px; height: 30px; }
+.navbar-brand, .nav-link { color: #F3EDE1; }
+.navbar-nav .nav-link.active { font-weight: 600; color: #F3EDE1; }
+/* BOTONES */
+.btn { width: 100%; margin: .5rem 0; }
+.btn.btn-primary { background-color: #093246; border-color: #093246; color: #F3EDE1; }
+.btn.btn-secondary { background-color: #198683; border-color: #198683; color: #F3EDE1; }
+
+/* Cards */
+.card {
+    width: 100%;
+    height: 400px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+img {
+    height: 170px
+}
+.card .card-body .card-text {
+    height: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-line-clamp: 3;
+}
 
 .navbar.bg-body-tertiary-perfil {
     padding-top: 0.1rem;

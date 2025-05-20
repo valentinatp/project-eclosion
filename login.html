@@ -1,74 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Eclosión</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Eclosión</a>
-                <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse"
-                    id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">Quienes somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true" href="feed.html">Feed</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perfil</a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="registration.html">Registrar</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="login.html">Iniciar sesión</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Contenido de pagina -->
-        <main class="container-fluid">
-            <h1>Login Eclosión</h1>
-            <section>
-                <div class="row">
-                    <div class="col">
-                        <h3>Body</h3>
-                    </div>
-                </div>
-            </section>
-        </main>
+<link rel="stylesheet" href="css/modal-style.css">
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
-            integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
-            crossorigin="anonymous"></script>
-        <script src="javascript/index.js"></script>
-    </body>
-</html>
+  <!-- Modal de Bootstrap para el login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <!-- Contenedor principal del modal. 
+        'modal fade' aplica animación de aparición/desaparición.
+        id="loginModal" permite referenciarlo desde JS.
+        tabindex="-1" permite que el modal no sea seleccionable por tabulación.
+        aria-labelledby y aria-hidden mejoran la accesibilidad. -->
+  <div class="modal-dialog ">
+    <!-- Define el área del modal (puedes agregar 'modal-lg' para hacerlo más ancho si lo deseas) -->
+    <div class="modal-content">
+      <!-- Contenido principal del modal -->
+      <div class="modal-header">
+        <!-- Encabezado del modal -->
+
+        <!-- Título del modal, con id para accesibilidad -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- Botón para cerrar el modal, usa clases de Bootstrap y atributos de accesibilidad -->
+      </div>
+      <div class="modal-body " id="">
+        <!-- Cuerpo del modal donde se cargará dinámicamente el contenido de login.html -->
+        <!-- Aquí se cargará login.html -->
+        <form id="loginForm" class="border p-4 rounded bg-light shadow"><!-- Formulario con borde, padding, bordes redondeados, fondo claro y sombra -->
+          <!-- Campo para el correo electrónico -->
+          <h5 class="modal-title fw-bold" id="loginModalLabel">Iniciar sesión</h5>
+          <p class="mb-2">Inicia sesión con tu cuenta <span class="fw-bold">Eclosión.</span></p><!-- Título del formulario -->
+          <br>
+
+          <div class="mb-3"><!-- Margen inferior para separar los campos -->
+              <label for="email" class="form-label fw-bold">Email</label><!-- Etiqueta para el campo de email -->
+              <input type="email" class="form-control border-secondary border-2" id="email" required><!-- Campo de entrada para el correo electrónico, obligatorio -->
+          </div>
+          <!-- Campo para la contraseña -->
+          <div class="mb-3"><!-- Margen inferior para separar los campos -->
+              <label for="password" class="form-label fw-bold">Contraseña</label><!-- Etiqueta para el campo de contraseña -->
+              <input type="password" class="form-control border-secondary border-2" id="password" required><!-- Campo de entrada para la contraseña, obligatorio -->
+          </div>
+          <!-- Botón para enviar el formulario -->
+          <button type="submit" class="btn btn-secondary w-100">Iniciar sesión</button><!-- Botón azul de Bootstrap que ocupa el 100% del ancho del formulario -->
+          <p class="mb-2 text-center">¿No tienes una cuenta?<a href="#" class="color-a text-decoration-none fw-bold"> Registrate.</a></p>
+<!-- aca no se enlasa CSS y JS porque lo va a heredar -->
+<!-- Modal de Bootstrap para el login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+	<!-- Contenedor principal del modal. 
+	'modal fade' aplica animación de aparición/desaparición.
+	id="loginModal" permite referenciarlo desde JS.
+	tabindex="-1" permite que el modal no sea seleccionable por tabulación.
+	aria-labelledby y aria-hidden mejoran la accesibilidad. -->
+
+	<div class="modal-dialog "><!-- Define el área del modal (puedes agregar 'modal-dialog' para hacerlo más ancho si lo deseas) -->
+		<!-- que cambio hace modal- -->
+			<div class="modal-content"><!-- Contenido principal del modal -->
+				<div class="modal-header"><!-- Encabezado del modal -->
+					<h5 class="modal-title" id="loginModalLabel">Iniciar sesión</h5><!-- Título del modal, con id para accesibilidad -->
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button><!-- Botón para cerrar el modal, usa clases de Bootstrap y atributos de accesibilidad -->
+				</div>
+				<div class="modal-body " id=""><!-- Cuerpo del modal donde se cargará dinámicamente el contenido de login.html -->
+				<!-- Aquí se cargará login.html -->
+					<form id="loginForm" class="border p-4 rounded bg-light shadow"><!-- Formulario con borde, padding, bordes redondeados, fondo claro y sombra -->
+
+						<!-- Campo para el correo electrónico -->
+						<p>Login Eclosión</p><!-- Título del formulario -->
+						<br>
+						<div class="mb-3"><!-- Margen inferior para separar los campos -->
+							<label for="email" class="form-label">Correo electrónico</label><!-- Etiqueta para el campo de email -->
+							<input type="email" class="form-control" id="email" required><!-- Campo de entrada para el correo electrónico, obligatorio -->
+						</div>
+						<!-- Campo para la contraseña -->
+						<div class="mb-3"><!-- Margen inferior para separar los campos -->
+							<label for="password" class="form-label">Contraseña</label><!-- Etiqueta para el campo de contraseña -->
+							<input type="password" class="form-control" id="password" required><!-- Campo de entrada para la contraseña, obligatorio -->
+						</div>
+						<!-- Botón para enviar el formulario -->
+						<button type="submit" class="btn btn-primary w-100">Iniciar sesión</button><!-- Botón azul de Bootstrap que ocupa el 100% del ancho del formulario -->
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
