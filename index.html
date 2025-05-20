@@ -11,7 +11,9 @@
             crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -19,23 +21,12 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Eclosión</a>
                 <div class="d-flex">
-                    <button class="navbar-toggler " type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="navbar-user-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12 2.5a5.25 5.25 0 0 0-2.519 9.857 9.005 9.005 0 0 0-6.477 8.37.75.75 0 0 0 .727.773H20.27a.75.75 0 0 0 .727-.772 9.005 9.005 0 0 0-6.477-8.37A5.25 5.25 0 0 0 12 2.5Z"></path></svg></span></button>
-                    <div class="navbar-collapse">
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="registration.html">Registrar</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="login.html">Iniciar sesión</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-menu-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M3.75 5.25a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5H3.75Zm0 6a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5H3.75Zm0 6a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5H3.75Z"></path></svg></span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-menu-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M3.75 5.25a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5H3.75Zm0 6a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5H3.75Zm0 6a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5H3.75Z"></path>
+                            </svg>
+                        </span>
                     </button>
                 </div>
                 <div class="collapse navbar-collapse"
@@ -48,13 +39,13 @@
                             <a class="nav-link" href="about-us.html">Quiénes somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true" href="feed.html">Feed</a>
+                            <a class="nav-link" href="feed.html">Feed</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perfil</a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item" href="#">Registrar</a>
+                                    <a class="dropdown-item" href="registration.html">Registrar</a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="#" id="openLoginModal">Iniciar sesión</a>
@@ -70,10 +61,125 @@
             <section>
                 <div class="row">
                     <div class="col">
-
-                      <!-- Eliminada letra l de (carousel) data-bs-ride en línea 58 -->
-
-                        <div class="contenedor-trini"></div>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card">
+                                        <img src="https://www.paiscircular.cl/wp-content/uploads/2025/01/playa-residuos-1024x682.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                El verano
+                                                y la contaminación: 1,7
+                                                millones de toneladas de
+                                                residuos afectan a playas y
+                                                océanos en Chile
+                                            </h5>
+                                            <p class="card-text">
+                                                Durante los
+                                                meses de verano, las playas
+                                                chilenas se convierten en
+                                                uno de los destinos
+                                                predilectos para miles de
+                                                turistas, pero también en un
+                                                punto crítico de acumulación
+                                                de residuos. Según el
+                                                Ministerio del Medio
+                                                Ambiente, en 2021 Chile
+                                                registró más de 1,7 millones
+                                                de toneladas de
+                                                contaminantes vertidos al
+                                                océano.
+                                            </p>
+                                            <a href="#" class="btn btn-primary">
+                                                Link Noticia
+                                            </a>
+                                            <img src="pictures/bolsa-basura-oceano.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">
+                                                    Card title
+                                                </h5>
+                                                <p class="card-text">
+                                                    Some
+                                                    quick example text to
+                                                    build on the card title
+                                                    and make up the bulk of
+                                                    the card’s content.
+                                                </p>
+                                                <a href="#" class="btn btn-primary">
+                                                    Go somewhere
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card">
+                                        <img src="https://portaluchile.uchile.cl//.imaging/default/dam/imagenes/Uchile/imagenes-noticias/184572_1_cientificosdelicbm-1-800-l_L/jcr:content.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                Científicos
+                                                de la U. de Chile
+                                                medirán contaminación
+                                                por microplásticos y
+                                                toxinas en el mar de
+                                                Chiloé
+                                            </h5>
+                                            <p class="card-text">
+                                                El
+                                                proyecto busca medir la
+                                                contaminación por
+                                                microplásticos y toxinas
+                                                emergentes en Chiloé
+                                                para entregar
+                                                información confiable a
+                                                las autoridades y apoyar
+                                                la toma de
+                                                decisiones.
+                                            </p>
+                                            <a href="#" class="btn btn-primary">
+                                                Link Noticia
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card">
+                                        <img src="https://www.canal26.com/media/image/2024/01/11/582895.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                Consecuencias
+                                                de la contaminación: los
+                                                residuos plásticos ponen
+                                                en riesgo la vida de 134
+                                                especies marinas.
+                                            </h5>
+                                            <p class="card-text">Peces,
+                                                tortugas, aves marinas,
+                                                focas, y ballenas que
+                                                viven en los océanos
+                                                confunden estos residuos
+                                                con su comida.</p>
+                                            <a href="#" class="btn btn-primary">
+                                                Link Noticia
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -81,7 +187,11 @@
                 <div class="row">
                     <div class="col">
                         <h1>Bienvenidos a Eclosión</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo fuga dolore laudantium, quaerat quidem nostrum aliquid repudiandae vitae nesciunt ullam blanditiis, facere accusantium? Suscipit pariatur maiores odit fugiat nostrum totam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Nemo fuga dolore laudantium, quaerat quidem
+                            nostrum aliquid repudiandae vitae nesciunt ullam
+                            blanditiis, facere accusantium? Suscipit pariatur
+                            maiores odit fugiat nostrum totam.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -100,58 +210,68 @@
                 </div>
                 <div class="row">
                     <div class="col">
-
                         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                            <div id="carouselExampleIndicators" class="">
+                            <div id="carouselExampleIndicators">
                                 <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button"
+                                        data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active"
+                                        aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button"
+                                        data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button"
+                                        data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
                                 </div>
+                                <!-- Listo el carrusel -->
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <div class="card">
-
-                                            <img src="https://www.paiscircular.cl/wp-content/uploads/2025/01/playa-residuos-1024x682.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">El verano y la contaminación: 1,7 millones de toneladas de residuos afectan a playas y océanos en Chile</h5>
-                                                <p class="card-text">Durante los meses de verano, las playas chilenas se convierten en uno de los destinos predilectos para miles de turistas, pero también en un punto crítico de acumulación de residuos. Según el Ministerio del Medio Ambiente, en 2021 Chile registró más de 1,7 millones de toneladas de contaminantes vertidos al océano.</p>
-                                                <a href="#" class="btn btn-primary">Link Noticia</a>
-
-                                            <img src="pictures/bolsa-basura-oceano.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                                <a href="#" class="btn btn-primary">Go somewhere</a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="card">
-
-                                            <img src="https://portaluchile.uchile.cl//.imaging/default/dam/imagenes/Uchile/imagenes-noticias/184572_1_cientificosdelicbm-1-800-l_L/jcr:content.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Científicos de la U. de Chile medirán contaminación por microplásticos y toxinas en el mar de Chiloé</h5>
-                                                <p class="card-text">El proyecto busca medir la contaminación por microplásticos y toxinas emergentes en Chiloé para entregar información confiable a las autoridades y apoyar la toma de decisiones.</p>   
-                                                <a href="#" class="btn btn-primary">Link Noticia</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="carousel-item">
-                                        <div class="card">
                                             <img src="https://www.canal26.com/media/image/2024/01/11/582895.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
-                                                <h5 class="card-title">Consecuencias de la contaminación: los residuos plásticos ponen en riesgo la vida de 134 especies marinas</h5>
-                                                <p class="card-text">Peces, tortugas, aves marinas, focas, y ballenas que viven en los océanos confunden estos residuos con su comida.</p>
-                                                <a href="#" class="btn btn-primary">Link Noticia</a>
-
-                                            <img src="pictures/bolsa-basura-oceano.jpg" class="card-img-top" alt="...">
+                                                <h5 class="card-title">
+                                                    Consecuencias
+                                                    de la contaminación: los
+                                                    residuos plásticos ponen
+                                                    en riesgo la vida de 134
+                                                    especies marinas.
+                                                </h5>
+                                                <p class="card-text">Peces,
+                                                    tortugas, aves marinas,
+                                                    focas, y ballenas que
+                                                    viven en los océanos
+                                                    confunden estos residuos
+                                                    con su comida.</p>
+                                                <a href="#" class="btn btn-primary">
+                                                    Link Noticia
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card">
+                                            <img
+                                                src="pictures/bolsa-basura-oceano.jpg"
+                                                class="card-img-top"
+                                                alt="...">
                                             <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                <h5
+                                                    class="card-title">Card
+                                                    title</h5>
+                                                <p
+                                                    class="card-text">Some
+                                                    quick example text
+                                                    to build on the card
+                                                    title and make up
+                                                    the bulk of the
+                                                    card’s content.</p>
+                                                <a href="#"
+                                                    class="btn btn-primary">Go
+                                                    somewhere</a>
                                             </div>
                                         </div>
                                     </div>
@@ -159,41 +279,37 @@
                                         <div class="card">
                                             <img src="pictures/bolsa-basura-oceano.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                                <a href="#" class="btn btn-primary">Go somewhere</a>
-
+                                                <h5 class="card-title">
+                                                    Card title
+                                                </h5>
+                                                <p class="card-text">
+                                                    Some
+                                                    quick example text
+                                                    to build on the card
+                                                    title and make up
+                                                    the bulk of the
+                                                    card’s content.
+                                                </p>
+                                                <a href="#" class="btn btn-primary">
+                                                    Go somewhere
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
                             </div>
                         </div>
                     </div>
-                </div>    
+                </div>
             </section>
-            <h1 class="display-5 text-center">¡Bienvenido a Eclosión!</h1>                   
-        </main>                                    
-        <div id="loginModalBody"></div><!-- Aquí se cargará el contenido del loginmodelbody -->
+        </main>
+        <!-- Aquí se cargará el contenido del loginmodelbody -->
+        <div id="loginModalBody"></div>
         <footer class="text-center">
-            <span class="">Desarrollado por Grupo Pulso Ecomarino</span>
+            <span class>Desarrollado por Grupo Pulso Ecomarino</span>
         </footer>
     </body>
-    <script
-          src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-          integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-          crossorigin="anonymous"></script>
-      <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
-          integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
-          crossorigin="anonymous"></script>
-      <script src="javascript/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+    <script src="javascript/index.js"></script>
 </html>
