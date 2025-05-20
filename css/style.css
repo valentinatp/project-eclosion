@@ -1,10 +1,29 @@
+@import url(home-style.css);
+
 .colores-paleta-01 { background-color: #093246; }
 .colores-paleta-02 { background-color: #284D5D; }
 .colores-paleta-03 { background-color: #198683; }
 .colores-paleta-04 { background-color: #68BDB8; }
 .colores-paleta-05 { background-color: #F3EDE1; }
 
-body { color: #284D5D; }
-h1 { color: #093246; }
+body { color: #284D5D; font-family: "Montserrat", sans-serif;}
+h1, h2, h3, h4, h5, h6 {color: #093246; } 
+h1 { font-size: 32px; }
+h2 { font-size: 28px; }
+h3 { font-size: 24px; }
 p { color: #284D5D; }
 img { width: 100px; height: 100px; }
+footer { background-color: #093246; padding: 1rem 0; color: #F3EDE1; }
+
+
+/* NAVBAR */
+.bg-body-tertiary { background-color: #093246 !important; color: #F3EDE1; }
+.navbar-toggler-icon { color: #F3EDE1; }
+.navbar-brand, .nav-link { color: #F3EDE1; }
+.navbar-nav .nav-link.active { font-weight: 600; color: #F3EDE1; }
+
+
+/* BOTONES */
+.btn { width: 100%; margin: .5rem 0; }
+.btn.btn-primary { background-color: #093246; border-color: #093246; color: #F3EDE1; }
+.btn.btn-secondary { background-color: #198683; border-color: #198683; color: #F3EDE1; }
