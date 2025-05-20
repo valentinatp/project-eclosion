@@ -1,0 +1,2 @@
+.carusel-botones { width: 100%; display: -webkit-inline-box; overflow: hidden; overflow-x: scroll; margin-bottom: 1rem; scrollbar-width: none; }
+.carusel-botones .btn { width: 40%; float: left; margin-left: 1px; margin-right: .5rem;}
