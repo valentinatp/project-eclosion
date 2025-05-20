@@ -9,8 +9,8 @@ h1 { color: #093246; }
 p { color: #284D5D; }
 img { width: 100px; height: 100px; }
 
-.navbar.bg-body-tertiary {
+.navbar.bg-body-tertiary-perfil {
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
-    min-height: 10px;
+    min-height: 20px;
 } 
