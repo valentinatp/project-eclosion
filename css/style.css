@@ -18,7 +18,8 @@ footer { background-color: #093246; padding: 1rem 0; color: #F3EDE1; font-size: 
 
 /* NAVBAR */
 .bg-body-tertiary { background-color: #093246 !important; color: #F3EDE1; }
-.navbar-toggler-icon { color: #F3EDE1; }
+.navbar-menu-icon svg  { background-color: #F3EDE1; width: 30px; height: 30px; }
+.navbar-user-icon svg { background-color: #F3EDE1; border-radius: 50%; width: 30px; height: 30px; }
 .navbar-brand, .nav-link { color: #F3EDE1; }
 .navbar-nav .nav-link.active { font-weight: 600; color: #F3EDE1; }
 
