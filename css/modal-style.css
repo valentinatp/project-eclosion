@@ -2,14 +2,14 @@
 
 .border-secondary {border-color: #68BDB8 !important;}
 .border {border-color: #68BDB8}
+
+.color-a {color: #198683 }
+
 .color-a {color: #198683 }
 
 .modal-header {border-bottom: none;}
 
 .modal.modal-responsive {color: #093246   }  /* Responsive modal aca se hace el estilo del mobile y teablet */
-
-
-
 
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
