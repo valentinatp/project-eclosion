@@ -1,3 +1,23 @@
-.carousel .carousel-indicators button { background-color: #68BDB8; border: 2px solid #198683; width: 10px; height: 10px; border-radius: 50%; }
+.carousel { padding: 0 16px; }
+.carousel .carousel-indicators button { background-color: #68BDB8; border: 2px solid #198683; width: 8px; height: 8px; border-radius: 50%; }
 .carousel-indicators { margin-bottom: 0.5rem; }
-.carousel-control-prev-icon, .carousel-control-next-icon { background-color: black; border-radius: 50%; opacity: 0.3;}
+.carousel-control-prev-icon, .carousel-control-next-icon { display: none; }
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .carousel-control-prev-icon, .carousel-control-next-icon { background-color: black; border-radius: 50%; opacity: 0.3;}
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/*XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }
