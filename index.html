@@ -58,7 +58,7 @@
         </nav>
         <!-- Contenido de pagina -->
         <main class="container-fluid">
-            <section>
+            <section class="container-cards-visibility-mobile">
                 <div class="row">
                     <div class="col">
                         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -67,6 +67,7 @@
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
+                            <!-- CARDS MOBILE-->
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="card">
@@ -95,25 +96,9 @@
                                                 contaminantes vertidos al
                                                 océano.
                                             </p>
-                                            <a href="#" class="btn btn-primary">
+                                            <a href="feed.html" class="btn btn-primary">
                                                 Link Noticia
                                             </a>
-                                            <img src="pictures/bolsa-basura-oceano.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">
-                                                    Card title
-                                                </h5>
-                                                <p class="card-text">
-                                                    Some
-                                                    quick example text to
-                                                    build on the card title
-                                                    and make up the bulk of
-                                                    the card’s content.
-                                                </p>
-                                                <a href="#" class="btn btn-primary">
-                                                    Go somewhere
-                                                </a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -183,16 +168,70 @@
                     </div>
                 </div>
             </section>
+            <section class="container-cards-visibility-tablet">
+                <div class="row">
+                    <div class="col">
+                        <div class="container-cards">
+                            <div class="card">
+                                <img src="https://www.paiscircular.cl/wp-content/uploads/2025/01/playa-residuos-1024x682.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        El verano y la contaminación: 1,7 millones de toneladas de residuos afectan a playas y océanos en Chile
+                                    </h5>
+                                    <p class="card-text">
+                                        Durante los meses de verano, las playas chilenas se convierten en uno de los destinos predilectos para miles de turistas, pero también en un
+                                        punto crítico de acumulación de residuos. Según el Ministerio del Medio Ambiente, en 2021 Chile registró más de 1,7 millones de toneladas de
+                                        contaminantes vertidos al océano.
+                                    </p>
+                                    <a href="feed.html" class="btn btn-primary">
+                                        Link Noticia
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="card">
+                                <img src="https://portaluchile.uchile.cl//.imaging/default/dam/imagenes/Uchile/imagenes-noticias/184572_1_cientificosdelicbm-1-800-l_L/jcr:content.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Científicos de la U. de Chile medirán contaminación por microplásticos y toxinas en el mar de Chiloé
+                                    </h5>
+                                    <p class="card-text">
+                                        El proyecto busca medir la contaminación por microplásticos y toxinas emergentes en Chiloé para entregar información confiable a
+                                        las autoridades y apoyar la toma de decisiones.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">
+                                        Link Noticia
+                                    </a>
+                                </div>
+                            </div>
+            
+                            <div class="card">
+                                <img src="https://www.canal26.com/media/image/2024/01/11/582895.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Consecuencias de la contaminación: los residuos plásticos ponen en riesgo la vida de 134 especies marinas.
+                                    </h5>
+                                    <p class="card-text">
+                                        Peces, tortugas, aves marinas, focas, y ballenas que viven en los océanos confunden estos residuos con su comida.</p>
+                                    <a href="#" class="btn btn-primary">
+                                        Link Noticia
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section>
                 <div class="row">
                     <div class="col">
-                        <h1>Bienvenidos a Eclosión</h1>
-                        <p>Descubre información clave sobre la contaminación en océanos, playas y ríos de Chile con nuestra plataforma interactiva. Explora datos actualizados, conoce el imapcto ambiental y encuentra formas de contribuir a un futuro más limpio. ¡Únete a nuestra comunidad y haz la diferencia!.</p>
+                        <h1 class="text-center mt-3">Bienvenidos a Eclosión</h1>
+                        <p class="text-justify">Descubre información clave sobre la contaminación en océanos, playas y ríos de Chile con nuestra plataforma interactiva. Explora datos actualizados, conoce el imapacto ambiental y encuentra formas de contribuir a un futuro más limpio. ¡Únete a nuestra comunidad y haz la diferencia!.</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <h3>¿Qué temas te gustaría investigar hoy?</h3>
+                        <h3 class="text-center">¿Qué temas te gustaría investigar hoy?</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -218,29 +257,14 @@
                                         <img src="https://www.paiscircular.cl/wp-content/uploads/2025/01/playa-residuos-1024x682.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title">
-                                                El verano
-                                                y la contaminación: 1,7
-                                                millones de toneladas de
-                                                residuos afectan a playas y
-                                                océanos en Chile
+                                                El verano y la contaminación: 1,7 millones de toneladas de residuos afectan a playas y océanos en Chile
                                             </h5>
                                             <p class="card-text">
-                                                Durante los
-                                                meses de verano, las playas
-                                                chilenas se convierten en
-                                                uno de los destinos
-                                                predilectos para miles de
-                                                turistas, pero también en un
-                                                punto crítico de acumulación
-                                                de residuos. Según el
-                                                Ministerio del Medio
-                                                Ambiente, en 2021 Chile
-                                                registró más de 1,7 millones
-                                                de toneladas de
-                                                contaminantes vertidos al
-                                                océano.
+                                                Durante los meses de verano, las playas chilenas se convierten en uno de los destinos predilectos para miles de turistas, pero también en un
+                                                punto crítico de acumulación de residuos. Según el Ministerio del Medio Ambiente, en 2021 Chile registró más de 1,7 millones de toneladas de
+                                                contaminantes vertidos al océano.
                                             </p>
-                                            <a href="#" class="btn btn-primary">
+                                            <a href="feed.html" class="btn btn-primary">
                                                 Link Noticia
                                             </a>
                                         </div>
