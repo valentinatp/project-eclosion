@@ -14,20 +14,91 @@
 
 .modal.modal-responsive {color: #093246   }  /* Responsive modal aca se hace el estilo del mobile y teablet */
 
+.boton-volver {
+  display: none !important;
+}
+
+
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  }
+@media (min-width: 576px) {  
+.auto-input {
+  width: 390px;
+  max-width: 100%;
+  height: 62px;
+  font-size: 18px;
+}
+
+ .boton-volver {
+    display: none !important;
+  }
+}
+
+
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  }
+@media (min-width: 768px) { 
+      .auto-input {
+    width: 640px;
+    max-width: 100%;
+    height: 90px;
+    font-size: 18px;
+  }
+  .boton-volver {
+    display: none !important;
+  }
+ 
+}
+ 
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {  }
+@media (min-width: 992px) { 
+    .boton-regresar {
+    display: none !important;
+  }
+
+  .auto-input {
+     width: 1020px;
+  max-width: 100%;
+  height: 80px;
+  font-size: 18px;
+  }
+
+
+}
+ 
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) { 
+    .boton-regresar {
+    display: none !important;
+  }
+   .auto-input {
+     width: 1020px;
+  max-width: 100%;
+  height: 80px;
+  font-size: 18px;
+  }
+  .boton-volver {
+    display: inline-block !important;
+  }
+}
+ 
 
 /*XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {  }
+@media (min-width: 1400px) { 
+.boton-regresar {
+    display: none !important;
+  }
+   .auto-input {
+     width: 1020px;
+  max-width: 100%;
+  height: 80px;
+  font-size: 18px;
+  }
+  .boton-volver {
+    display: inline-block !important;
+  }
+  }

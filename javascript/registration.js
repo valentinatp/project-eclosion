@@ -1,15 +1,17 @@
-function togglePassword(inputId, iconId) {
+//cambio de iconos de contraseña
+function togglePassword(inputId) {
   const input = document.getElementById(inputId);
-  const icon = document.getElementById(iconId);
+  const icon = document.getElementById('icon-' + inputId);
   if (input.type === "password") {
     input.type = "text";
-    icon.style.fill = "#198754";
+    icon.src = "pictures/eyes-open.svg"; // Cambia al ícono de ojo cerrado
   } else {
     input.type = "password";
-    icon.style.fill = "#888";
+    icon.src = "pictures/eyes-close.svg"; // Cambia al ícono de ojo abierto
   }
 }
 
+// Validación de contraseñas
 function validarContraseñas() {
   const password = document.getElementById("password").value;
   const confirmPassword = document.getElementById("confirmPassword").value;
@@ -23,10 +25,13 @@ function validarContraseñas() {
   } else {
     errorText.classList.add("d-none");
     registroExitoso.classList.remove("d-none");
+   
+   
     // Redirige después de 2 segundos
     setTimeout(function() {
       window.location.href = "index.html";
-    }, 2000);
+    }, 2000); // 2000 milisegundos = 2 segundos
     return false; // Evita el envío real para mostrar el mensaje
   }
 }
+
