@@ -16,3 +16,11 @@ document.addEventListener('DOMContentLoaded', function () { // Espera a que el D
     }
 });
 // hasta aqui
+document.querySelectorAll('.like-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('btn-liked');
+    const icon = btn.querySelector('i');
+    icon.classList.toggle('bi-heart');
+    icon.classList.toggle('bi-heart-fill');
+  });
+});
