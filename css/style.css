@@ -33,10 +33,10 @@ footer { background-color: #093246; padding: 1rem 0; color: #F3EDE1; font-size: 
 .btn { width: 100%; margin: .5rem 0; font-weight: 500; }
 .btn.btn-primary { background-color: #093246; border-color: #093246; color: #F3EDE1; }
 .btn.btn-secondary { background-color: #198683; border-color: #198683; color: #F3EDE1; }
-.feed-page .btn-group .btn {
-    width: auto !important;
-    margin: 0 !important;
-}
+
+
+
+
 /* Cards */
 .card {
     width: 100%;
@@ -44,6 +44,8 @@ footer { background-color: #093246; padding: 1rem 0; color: #F3EDE1; font-size: 
     margin-top: 24px;
     margin-bottom: 32px;
 }
+/* css feed */
+/* card*/
 .feed-page .card {
     width: 100%;
     height: auto;
@@ -53,6 +55,19 @@ footer { background-color: #093246; padding: 1rem 0; color: #F3EDE1; font-size: 
     margin-right: 0;
     box-sizing: border-box;
 }
+
+.feed-page .card-body-news .card-text {
+    height: auto !important;
+    overflow: visible !important;
+    text-overflow: initial !important;
+    white-space: normal !important;
+}
+
+.feed-page .btn-group .btn {
+    width: auto !important;
+    margin: 0 !important;
+}
+
 img {
     height: 170px
 }
@@ -64,12 +79,7 @@ img {
 }
 
 
-.feed-page .card-body-news .card-text {
-    height: auto !important;
-    overflow: visible !important;
-    text-overflow: initial !important;
-    white-space: normal !important;
-}
+
 
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
