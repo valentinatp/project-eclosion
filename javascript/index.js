@@ -11,6 +11,11 @@ document.addEventListener('DOMContentLoaded', function () { // Espera a que el D
                     document.getElementById('loginModalBody').innerHTML = html; // Inserta el HTML obtenido dentro del modal (en el div con id 'loginModalBody')
                     var loginModal = new bootstrap.Modal(document.getElementById('loginModal')); // Crea una instancia del modal de Bootstrap usando el div con id 'loginModal'
                     loginModal.show(); // Muestra el modal en pantalla
+
+                    // Limpia el contenido del modal al cerrarlo
+                    document.getElementById('loginModal').addEventListener('hidden.bs.modal', function () {
+                        document.getElementById('loginModalBody').innerHTML = ''; // Limpia el contenido
+                    });
                 });
             });
     }
