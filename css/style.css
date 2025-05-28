@@ -17,6 +17,7 @@ p { color: #284D5D;  font-size: 16px; }
 img { width: 100px; height: 100px; }
 footer { background-color: #093246; padding: 1rem 0; color: #F3EDE1; font-size: 0.8rem; }
 .text-justify { text-align: justify; }
+.title-site, .subtitle-site { text-align: center; }
 /* NAVBAR */
 .bg-body-tertiary { background-color: #093246 !important; color: #F3EDE1; }
 .navbar-menu-icon svg  { background-color: #F3EDE1; width: 30px; height: 30px; }
@@ -69,6 +70,8 @@ img {
     h3 { font-size: 28px; }
     p { font-size: 20px; }
     .card { max-width: 320px; }
+    .title-site, .subtitle-site { text-align: left; }
+
 }
 /*Resolucion desktop*/
 /* Large devices (desktops, 992px and up)*/
