@@ -1,104 +1,192 @@
-.modal-content {color: #093246}
+.modal-content {color: #093246;border-radius: 28px;}
 
-.border-secondary {border-color: #68BDB8 !important;}
-.border {border-color: #68BDB8}
+.border-secondary {border: 3px solid #68BDB8 !important;}
 
-.color-a {color: #198683 }
+.modal-content .btn.w-100 {
+  color: #F3EDE1; /* Cambia el color del texto a blanco */
+}
+.modal-content .btn:hover,
+.modal-content .btn:focus {
+  background-color: #146c6a;
+  color: #fff;
+}
 
-.color-a {color: #198683 }
+.modal-content .register-link a,
+.modal-content a.fw-bold {
+  color: #198683;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+#loginModal .modal-dialog {
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  align-items: stretch;
+}
+
+#loginModal .modal-content {
+  border-radius: 50px 50px 0px 0px;
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-extra {
+  display: none;
+}
+/* de aqui para abajo agregar las clases  generales, sin pasarse los  .de aqui empieza los css de registro */
+
+.boton-regresar {display: inline-block;font-size: 32px;text-decoration: none;margin-top: 26px;margin-left: 16px;}
+.boton-regresar img {width: 32px;height: 32px;vertical-align: middle;}
+
+.registro-titulo {margin-bottom: 10px;margin-top: -24px;}
+.registro-container {margin-top: 3px;}
+.registro-descripcion { padding-bottom: 16px;}
+
+/* Cambia posicion y tamaño de ojo */
+.input-eye {position: absolute;top: 65%;right: 50px;transform: translateY(-50%);width: 26px;height: 26px;cursor: pointer;display: flex;align-items: center; z-index: 2;}
+.input-eye img { width:30px;height: 30px;} 
+
+
+/* Estilo de los botones de registro */
+.botones-registro {display: flex;justify-content: center; align-items: center;gap: 10px; margin-top: 20px;}
+
+.boton-volver {width: 30%;font-weight: 500; background-color: #F3EDE1;border: 1px solid #198683;color: #198683;padding: 10px;text-align: center;border-radius: 5px;
+}
+
+.boton-registrar {width: 60%;font-weight: 500;background-color: #198683;border: 1px solid #198683;color: #F3EDE1;padding: 10px;text-align: center;border-radius: 5px;
+}
+
+.boton-iniciar-sesion {color: #198683;text-decoration: none;font-weight: 700}        
 
 
 
 
-.modal-header {border-bottom: none;}
+/* de aqui para abajo solo agregar clases en los @media */
+@media (min-width: 100px) and (max-width: 767px) {  
+      #loginModal .modal-dialog {
+    margin: 0;
+    width: 100vw;
+    min-height: 100vh;
+    max-width: 10000vw;
+    display: flex;
+    align-items: stretch;
+  }
+  #loginModal .modal-content {
+    border-radius: 50px 50px 0px 0px;
+    min-height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-.modal.modal-responsive {color: #093246   }  /* Responsive modal aca se hace el estilo del mobile y teablet */
+.png-icon {
+    width: 50px; /* Ajusta el ancho según sea necesario */
+    height: 50px; /* Ajusta la altura según sea necesario */
+    background-image: url("pictures/eye.png"); /* Ruta de tu archivo PNG */
+    background-size: contain; /* Ajusta el tamaño de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+}
 
 .boton-volver {
-  display: none !important;
-}
-
-
-/* // X-Small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
-
-// Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  
-.auto-input {
-  width: 390px;
-  max-width: 100%;
-  height: 62px;
-  font-size: 18px;
-}
-
- .boton-volver {
-    display: none !important;
-  }
-}
-
-
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-      .auto-input {
-    width: 640px;
-    max-width: 100%;
-    height: 90px;
-    font-size: 18px;
-  }
-  .boton-volver {
-    display: none !important;
-  }
- 
-}
- 
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { 
-    .boton-regresar {
-    display: none !important;
-  }
-
-  .auto-input {
-     width: 1020px;
-  max-width: 100%;
-  height: 80px;
-  font-size: 18px;
-  }
+        display: none;
+    }
+    
+.input-eye {position: absolute;top: 75%;right: 40px;transform: translateY(-50%);width: 26px;height: 26px;cursor: pointer;display: flex;align-items: center; z-index: 2;}
 
 
 }
- 
 
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-    .boton-regresar {
-    display: none !important;
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992.99px) {
+  #loginModal .modal-dialog {
+    margin: 0;
+    width: 100vw;
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    align-items: stretch;
   }
-   .auto-input {
-     width: 1020px;
-  max-width: 100%;
-  height: 80px;
-  font-size: 18px;
+  #loginModal .modal-content {
+    border-radius: 40px 40px 0px 0px;
+    min-height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  .boton-volver {
-    display: inline-block !important;
-  }
+  .btn {
+  max-width: none;
+  border-radius: 16px;
+  font-weight: 700;
 }
- 
 
-/*XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) { 
-.boton-regresar {
-    display: none !important;
+.boton-volver {
+        display: none;
+    }
+}
+.input-eye {position: absolute;top: 72%;right: 50px;transform: translateY(-50%);width: 26px;height: 26px;cursor: pointer;display: flex;align-items: center; z-index: 2;}
+
+
+/* Desde 993px en adelante: vuelve al centrado y tamaño normal */
+@media (min-width: 993px) {
+
+  .modal-content .register-link a:hover, .modal-content a.fw-bold:hover {text-decoration: underline;}
+  #loginModal .modal-dialog {
+    margin: 1.75rem auto;
+    width: auto;
+    min-height: auto;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
   }
-   .auto-input {
-     width: 1020px;
-  max-width: 100%;
-  height: 80px;
-  font-size: 18px;
+  #loginModal .modal-content {
+     border-radius: 40px;
+    min-height: auto;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
   }
-  .boton-volver {
-    display: inline-block !important;
+  .btn-extra {
+    display: block; /* Hace visible el botón */
+    font-weight: 700;
+    
+
   }
+  .btn-success{
+    width: 100%;
+    border-radius: 16px;
+    background-color: #F3EDE1;
+    border-width: 3px;
+    border-color: #198683;
+    color: #198683;
+    height: 80px;
   }
+  .btn-secondary{
+    width: 100%;
+    height: 80px;
+    border-radius: 16px;
+  }
+  .form-control{
+    height: 80px;
+  }
+  .boton-regresar {
+        display: none;
+    }
+
+    .input-eye {position: absolute;top: 66%;right: 50px;transform: translateY(-50%);width: 26px;height: 26px;cursor: pointer;display: flex;align-items: center; z-index: 2;}
+}
